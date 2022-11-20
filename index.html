@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Multiplayer Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="player-info">
+      <div>
+        <label for="player-name">Your Name</label>
+        <input id="player-name" maxlength="10" type="text" />
+      </div>
+      <div>
+        <button id="player-color">Change Color</button>
+      </div>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+   <script>
+   const firebaseConfig = {
+     apiKey: "AIzaSyA6ZmA_mMTt27Og9xJVDAr3MHxQR5j0ZI4",
+     authDomain: "misiepysie-cde04.firebaseapp.com",
+     databaseURL: "https://misiepysie-cde04-default-rtdb.europe-west1.firebasedatabase.app",
+     projectId: "misiepysie-cde04",
+     storageBucket: "misiepysie-cde04.appspot.com",
+     messagingSenderId: "1083852687970",
+     appId: "1:1083852687970:web:fc1920ba989085c44cdf3b"
+     };
+
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+
+   </script>
+
+    <script src="/KeyPressListener.js"></script>
+<script src="/app.js"></script>
+
+  </body>
+</html>
